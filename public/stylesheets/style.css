@@ -1,0 +1,19 @@
+body {
+
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("/images/backimg.jpg") no-repeat;
+  background-size: 100%;
+  height:600px;
+}
+
+a {
+  color: #00B7FF;
+}
+a.search{
+  position: absolute;
+  top:37px;
+  right:484px;
+}
+.prepage a{float:left;text-decoration:none;padding:.5em 1em;color:black;font-weight:bold;}
+.nextpage a{float:right;text-decoration:none;padding:.5em 1em;color:black;font-weight:bold;}
+.prepage a:hover,.nextpage a:hover{text-decoration:none;background-color:lightgreen;color:#f9f9f9;-webkit-transition:color .2s linear;}

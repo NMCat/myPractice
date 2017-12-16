@@ -1,0 +1,37 @@
+<%include share-nav%>
+
+<a href="/" class="btn btn-warning pull-right search">不知道去向哪里的按钮</a>
+<!-- 列表 -->
+<div class="container table-responsive" style="margin-top: 20px;">
+    <table class="table table-hover">
+        <tr>
+            <th class="text-center">姓名</th>
+            <th class="text-center">年龄</th>
+            <th class="text-center">性别</th>
+            <th class="text-center">号码</th>
+            <th class="text-center">邮箱</th>
+            <th class="text-center">备注</th>
+        </tr>
+        <% mess.forEach(function (mes) { %>
+        <tr>
+            <td class="text-center"><%= mes.name%></td>
+            <td class="text-center"><%= mes.age%></td>
+            <td class="text-center"><%= mes.gender ? "男" : "女" %></td>
+            <td class="text-center"><%= mes.phone%></td>
+            <td class="text-center"><%= mes.email%></td>
+            <td class="text-center"><%= mes.detail%></td>
+        <%})%>
+    </table>
+</div>
+
+<div id="students" class="container" style="margin-top: 20px;">
+
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/template.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="index.js"></script>
+</html>
